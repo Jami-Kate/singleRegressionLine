@@ -31,7 +31,7 @@ def plot_regression_line(x, y, b):
     plt.scatter(x, y, color = "m", marker = "o", s = 30)
 
     #predicted response vector
-    y_pred = b[0] + b[1] + x
+    y_pred = b[0] + b[1] * x
 
     #plotting the regression plot_regression_line
     plt.plot(x, y_pred, color = "g")
